@@ -1,11 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>A Tocha</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+
+    <input type="radio" name="history" id="spk1" class="state-toggle" checked>
+    <input type="radio" name="history" id="spk2" class="state-toggle">
+    <input type="radio" name="history" id="spk3" class="state-toggle">
+    <input type="radio" name="history" id="spk4" class="state-toggle">
+    <input type="radio" name="history" id="spk5" class="state-toggle">
+
+    <input type="radio" name="history" id="scene2" class="state-toggle">
+
+    <input type="radio" name="history" id="left" class="state-toggle">
+    <input type="radio" name="history" id="right" class="state-toggle">
+
+    <div class="scene scene-1">
+
+        <img src="assets/home.jpg" alt="entrace-cave">
+
+        <div class="dialog">
+            <p class="text-spk spk-1">After a long walk, the boy arrived before a colossal cave. Two tunnels opened up
+                before him.</p>
+            <p class="text-spk spk-2">JACK: — This is it... I need to find the Torch. But why does this place seem to be
+                watching me?</p>
+            <p class="text-spk spk-3">MYSTERIOUS VOICE: — The light wasn't stolen by chance, boy. If you wish to get it
+                back, you'll have to prove you deserve to carry it.</p>
+            <p class="text-spk spk-4">JACK: — Who's there?! Show yourself!</p>
+            <p class="text-spk spk-5">No answer. Only the sound of something heavy moving in the depths...</p>
     
+            <label for="spk-2" class="btn-next btn-to-spk2">&gt;</label>
+            <label for="spk-2" class="btn-next btn-to-spk3">&gt;</label>
+            <label for="spk-2" class="btn-next btn-to-spk4">&gt;</label>
+            <label for="spk-2" class="btn-next btn-to-spk5">&gt;</label>
+        
+            <label for="scene2" class="btn-next btn-to-scene2"> &gt; Enter </label>
+        </div>
+    </div>
+
+    <div class="scene scene-2">
+        <img src="assets/cave.jpg" alt="cave_two_doors" class="scene-image">
+
+        <div class="dialog">
+            <div class="text_d">
+                <p class="text-spk arctive-scene2">What will Jack do?</p>
+
+                <div class="dialog-choices">
+                    <label for="left" class="choice-btn">Enter through the tunnel on the left.</label>
+                    <label for="right" class="choice-btn">Enter through the tunnel on the right.</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 </body>
+
 </html>
