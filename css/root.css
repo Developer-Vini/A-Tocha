@@ -1,0 +1,22 @@
+:root {
+    /* color style.css */
+    --background: black;
+    --background2: rgba(10, 10, 12, 0.92);
+    --letter: white;
+    --border: #333;
+    --white-text-spk: #f1fff1;
+    --background-btn: #e67e22;
+    --background-btn_hover: #d35400;
+    --background-choice_btn: #2c3e50;
+    --border-btn_choice: #455d7a;
+    --background-btn_choice_hover: #34495e;
+    --border-btn_choice: #e67e22;
+
+    /* color introduction.css */
+    --background_i: #0b0b0d;
+    --h1_color:  #ffb444;
+    --diferent: #ff5252;
+    --flash_effect_medi: #1A0505;
+    --flash_effect_finished: #2B0808;
+    --btn_background: rgba(0, 0, 0, 0.75);
+}
