@@ -159,3 +159,19 @@ p {
         background-color: #2B0808;
     }
 }
+
+h1 {
+    color: #ffb444;
+    text-shadow: 0 0 5px rgba(255, 180, 68, 0.5), 0 0 20px rgba(255, 100, 0, 0.25);
+    animation: goldenPulse 3s ease-in-out infinite;
+}
+
+@keyframes goldenPulse {
+    0%, 100%{
+        text-shadow: 0 0 5px rgba(255, 180, 68, 0.3);
+    }
+    50%{
+        text-shadow: 0 0 12px #ffb444, 0 0 32px rgba(255, 80, 0, 0.7);
+    }
+}
+
