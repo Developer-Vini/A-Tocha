@@ -16,10 +16,16 @@
     <input type="radio" name="history" id="spk4" class="state-toggle">
     <input type="radio" name="history" id="spk5" class="state-toggle">
 
+    <input type="radio" name="history" id="keyScene" class="state-toggle">
+
     <input type="radio" name="history" id="scene2" class="state-toggle">
 
     <input type="radio" name="history" id="left" class="state-toggle">
     <input type="radio" name="history" id="right" class="state-toggle">
+
+
+    <input type="radio" name="history" id="riddle1" class="state-toggle">
+    <input type="radio" name="history" id="riddle2" class="state-toggle">
 
     <div class="scene scene-1">
 
@@ -34,13 +40,14 @@
                 back, you'll have to prove you deserve to carry it.</p>
             <p class="text-spk spk-4">JACK: — Who's there?! Show yourself!</p>
             <p class="text-spk spk-5">No answer. Only the sound of something heavy moving in the depths...</p>
-    
+
             <label for="spk2" class="btn-next btn-to-spk2">&gt;</label>
             <label for="spk3" class="btn-next btn-to-spk3">&gt;</label>
             <label for="spk4" class="btn-next btn-to-spk4">&gt;</label>
             <label for="spk5" class="btn-next btn-to-spk5">&gt;</label>
-        
+
             <label for="scene2" class="btn-next btn-to-scene2"> &gt; Enter </label>
+
         </div>
     </div>
 
@@ -49,14 +56,43 @@
 
         <div class="dialog">
             <div class="text_d">
-                <p class="text-spk arctive-scene2">What will Jack do?</p>
+                <p class="text-spk active-scene2">What will Jack do?</p>
 
                 <div class="dialog-choices">
-                    <label for="left" class="choice-btn">Enter through the tunnel on the left.</label>
+                    <label for="riddle1" class="choice-btn">Enter through the tunnel on the left.</label>
                     <label for="right" class="choice-btn">Enter through the tunnel on the right.</label>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="scene scene-key">
+        <img src="assets/zu.gif" alt="cave" class="cave-background">
+        <img src="assets/key.png" alt="key" class="key">
+
+        <div class="riddle">
+            <p class="riddle-title">VOICE MYSTERIOUS</p>
+
+            <p class="riddle-text text-riddle1">
+                I am small, but I can open paths.
+                I lie hidden where stone meets darkness.
+                Search carefully, traveler,
+                for without me, there is no passing.
+            </p>
+
+            <p class="riddle-text text-riddle2">
+                The key is hidden nearby.
+                Look carefully among the stones!
+            </p>
+            <label for="riddle2" class="btn-next btn-riddle1">
+                Continuar &gt;
+            </label>
+            <label for="keyScene" class="btn-next btn-riddle2">
+                search for the key  &gt;
+            </label>
+
+        </div>
+
     </div>
 
 
