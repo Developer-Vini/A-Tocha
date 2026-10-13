@@ -221,7 +221,7 @@ body {
     height: auto;
     top: 70%;
     left: 5%;
-    opacity: 0.05;
+    opacity: 0.0230;
     cursor: pointer;
     object-fit: contain;
     z-index: 2;
@@ -271,4 +271,19 @@ body {
 #riddle2:checked~.scene-key .text-riddle2,
 #riddle2:checked~.scene-key .btn-riddle2 {
     display: block;
+}
+
+#keyScene:checked ~  .scene-key,
+#riddle1:checked ~ .scene-key,
+#riddle2:checked ~ .scene.key,
+#keyFound:checked ~ .scene-key{
+    display: flex;
+}
+
+#keyFound:checked ~ .scene-key .text-key-found {
+    display: block;
+}
+
+#keyFound:checked ~ .scene-key .btn-key-found {
+    display: inline-block;
 }

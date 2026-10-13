@@ -23,9 +23,14 @@
     <input type="radio" name="history" id="left" class="state-toggle">
     <input type="radio" name="history" id="right" class="state-toggle">
 
+    <input type="radio" id="keyFound" name="history" class="state-toggle">
 
     <input type="radio" name="history" id="riddle1" class="state-toggle">
     <input type="radio" name="history" id="riddle2" class="state-toggle">
+
+
+    <input type="radio" name="history" id="doorUnlocked" class="state-toggle">
+    
 
     <div class="scene scene-1">
 
@@ -68,7 +73,10 @@
 
     <div class="scene scene-key">
         <img src="assets/zu.gif" alt="cave" class="cave-background">
-        <img src="assets/key.png" alt="key" class="key">
+        
+        <label for="keyFound" class="key-trigger">
+            <img src="assets/key.png" alt="key" class="key">
+        </label>
 
         <div class="riddle">
             <p class="riddle-title">VOICE MYSTERIOUS</p>
@@ -84,6 +92,15 @@
                 The key is hidden nearby.
                 Look carefully among the stones!
             </p>
+
+            <p class="riddle-text text-key-found">
+                Jack: - I found the key!! Now I can go deeper into the cave.
+            </p>
+
+            <label for="doorUnlocked" class="btn-next btn-key-found">
+                Continuar &gt;
+            </label>
+
             <label for="riddle2" class="btn-next btn-riddle1">
                 Continuar &gt;
             </label>
