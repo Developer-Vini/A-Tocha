@@ -273,17 +273,67 @@ body {
     display: block;
 }
 
-#keyScene:checked ~  .scene-key,
-#riddle1:checked ~ .scene-key,
-#riddle2:checked ~ .scene.key,
-#keyFound:checked ~ .scene-key{
+
+#keyScene:checked~.scene-key,
+#riddle1:checked~.scene-key,
+#riddle2:checked~.scene-key,
+#keyFound:checked~.scene-key {
     display: flex;
 }
 
-#keyFound:checked ~ .scene-key .text-key-found {
+#keyFound:checked~.scene-key .text-key-found {
     display: block;
 }
 
-#keyFound:checked ~ .scene-key .btn-key-found {
+#keyFound:checked~.scene-key .btn-key-found {
     display: inline-block;
+}
+
+#spk1:checked~.scene-1 {
+    display: flex;
+}
+
+#right:checked~.scene-right-confirm1 {
+    display: flex;
+}
+
+#rightConfirm1:checked~.scene-right-confirm2 {
+    display: flex;
+}
+
+
+.choice-no-key,
+.choice-has-key {
+    display: none;
+}
+
+#hasKey:not(:checked)~.scene-2 .choice-no-key {
+    display: inline-block;
+}
+
+#hasKey:checked~.scene-2 .choice-has-key {
+    display: inline-block;
+}
+
+#hasKey:checked~.scene-key .key-trigger {
+    pointer-events: none;
+}
+
+
+#hasKey:checked~.scene-key .text-key-found {
+    display: block;
+}
+
+
+#hasKey:checked~.scene-key .btn-key-found {
+    display: inline-block;
+}
+
+
+#leftLocked:checked~.scene-left-locked {
+    display: flex;
+}
+
+#left:checked ~ .scene-left {
+    display: flex;
 }

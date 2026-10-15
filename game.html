@@ -16,6 +16,18 @@
     <input type="radio" name="history" id="spk4" class="state-toggle">
     <input type="radio" name="history" id="spk5" class="state-toggle">
 
+    <input type="checkbox" id="hasKey" class="state-toggle">
+    <input type="radio" name="history" id="leftLocked" class="state-toggle">
+
+    <input type="radio" name="history" id="rightConfirm1" class="state-toggle">
+    <input type="radio" name="history" id="rightConfirm2" class="state-toggle">
+
+    <input type="radio" name="history" id="bridgeQuestion1" class="state-toggle">
+    <input type="radio" name="history" id="bridgeQuestion2" class="state-toggle">
+
+    <input type="radio" name="history" id="dragonAttack" class="state-toggle">
+    <input type="radio" name="history" id="death" class="state-toggle">
+
     <input type="radio" name="history" id="keyScene" class="state-toggle">
 
     <input type="radio" name="history" id="scene2" class="state-toggle">
@@ -64,17 +76,82 @@
                 <p class="text-spk active-scene2">What will Jack do?</p>
 
                 <div class="dialog-choices">
-                    <label for="riddle1" class="choice-btn">Enter through the tunnel on the left.</label>
-                    <label for="right" class="choice-btn">Enter through the tunnel on the right.</label>
+                    <label for="leftLocked" class="choice-btn choice-no-key">
+                        Enter through the tunnel on the left
+                    </label>
+                    <label for="left" class="choice-btn choice-has-key">
+                        Enter through the tunnel on the left
+                    </label>
+                    <label for="right" class="choice-btn">
+                        Enter throungh the tunnel on the right
+                    </label>
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="scene scene-left-locked">
+        <img src="assets/cave.jpg" alt="" class="scene-img">
+
+        <div class="dialog">
+            <div class="text_d">
+                <p> The door is locked. Jack needs an iron key</p>
+
+                <div class="dialog-choices">
+                    <label for="scene2" class="choice-btn">
+                        Return to the entrace
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="scene scene-right-confirm1">
+        <img src="assets/cave.jpg" alt="" class="scene-image">
+
+        <div class="dialog">
+            <p class="text-spk">
+                Jack - Are you want to enter this tunnel?
+                Something feels wrong...
+            </p>
+            <div class="dialog-choices">
+                <label for="rightConfirm1" class="choice-btn">
+                    Continue into the tunnel.
+                </label>
+                <label for="scene2" class="choice-btn">
+                    Return to the entrace.
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <div class="scene scene-right-confirm2">
+        <img src="assets/cave.jpg" alt="darktunnel" class="scene-image">
+
+        <div class="dialog">
+            <p class="text-spk">
+                JACK: I heard something... Are you absolutely sure
+                you want to keep going?
+            </p>
+
+            <div class="dialog-choices">
+                <label for="riddle1" class="choice-btn">
+                    Yes, keep going.
+                </label>
+                <label for="scene2" class="choice-btn">
+                    No, return to the entrace
+                </label>
+            </div>
+        </div>
+
+    </div>
+
     <div class="scene scene-key">
         <img src="assets/zu.gif" alt="cave" class="cave-background">
         
-        <label for="keyFound" class="key-trigger">
+        <label for="hasKey" class="key-trigger">
             <img src="assets/key.png" alt="key" class="key">
         </label>
 
@@ -97,8 +174,8 @@
                 Jack: - I found the key!! Now I can go deeper into the cave.
             </p>
 
-            <label for="doorUnlocked" class="btn-next btn-key-found">
-                Continuar &gt;
+            <label for="scene2" class="btn-next btn-key-found">
+                Return to the entry &gt;
             </label>
 
             <label for="riddle2" class="btn-next btn-riddle1">
@@ -111,7 +188,6 @@
         </div>
 
     </div>
-
 
 
 </body>
