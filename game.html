@@ -40,9 +40,10 @@
     <input type="radio" name="history" id="riddle1" class="state-toggle">
     <input type="radio" name="history" id="riddle2" class="state-toggle">
 
+    <input type="radio" name="history" id="dragonRoom" class="state-toggle">
 
     <input type="radio" name="history" id="doorUnlocked" class="state-toggle">
-    
+
 
     <div class="scene scene-1">
 
@@ -150,7 +151,7 @@
 
     <div class="scene scene-key">
         <img src="assets/zu.gif" alt="cave" class="cave-background">
-        
+
         <label for="hasKey" class="key-trigger">
             <img src="assets/key.png" alt="key" class="key">
         </label>
@@ -182,14 +183,55 @@
                 Continuar &gt;
             </label>
             <label for="keyScene" class="btn-next btn-riddle2">
-                search for the key  &gt;
+                search for the key &gt;
             </label>
 
         </div>
+    </div>
 
+    <div class="scene scene-left">
+        <img src="assets/guardian.jpg" alt="" class="scene-image">
+
+        <div class="dialog">
+            <p class="text-spk" style="display: block;">
+                An ancient guard rises from the dust, blocking the way.
+            </p>
+
+            <div class="dialog-choices">
+                <label for="doorUnlocked" class="choice-btn">Fight the guardian</label>
+                <label for="death" class="choice-btn">Try to sneak past</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="scene scene-death">
+        <img src="assets/cave.jpg" alt="gamepver" class="scene-image">
+
+        <div class="dialog">
+            <p class="text-spk" style="display:block;">
+                The light goes out forever...
+            </p>
+            <div class="dialog-choices">
+                <a href="index.html" class="choice-btn">Try again</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="scene scene-door">
+        <img src="assets/door.jpg" alt="">
+        <div class="dialog">
+            <p class="text-spk" style="display: block;">
+                The guardian falls to the ground. Behind them, a massive iron door awaits at the top of the staircase.
+            </p>
+
+            <div class="dialog-choices">
+                <label for="dragonRoom" class="choice-btn"> Open the door with the iron key</label>
+                <label for="scene2" class="choice-btn">return to the entrace</label>
+            </div>
+        </div>
     </div>
 
 
 </body>
-
+<!--<a href="https://www.magnific.com/br/vetores-gratis/vector-o-fundo-dos-desenhos-animados-com-a-porta-magica-de-madeira-com-janela-portal-ystery_4393934.htm#fromView=keyword&page=1&position=22&uuid=c08f45ed-ded9-418c-aee4-ec67b9022ee8&track=ais_hybrid&query=Porta+arte+jogo+2d">Imagem de vectorpouch no Magnific</a>-->
 </html>

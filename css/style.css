@@ -337,3 +337,21 @@ body {
 #left:checked ~ .scene-left {
     display: flex;
 }
+
+#death:checked ~ .scene-death {
+    display: flex;
+}
+
+.scene-death .scene-image {
+    filter: grayscale(1) brightness(0.35);
+}
+.scene-death .text-spk{
+    color: var(--diferent);
+}
+a.choice-btn{
+    text-decoration: none;
+}
+
+#doorUnlocked:checked ~ .scene-door{
+    display: flex;
+}
