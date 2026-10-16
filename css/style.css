@@ -409,3 +409,20 @@ a.choice-btn{
         transform: scale(1) translate(0,0);
     }
 }
+
+#r2:checked ~ .scene-r2{
+    display: flex;
+}
+
+#r2h:checked ~ .scene-r2h {
+    display: flex;
+}
+
+.battle-hurt::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    box-shadow: inset 0 0 140px rgba(200, 0, 0, 0.75);
+    pointer-events: none;
+    z-index: 5;
+}
