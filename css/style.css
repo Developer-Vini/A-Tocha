@@ -426,3 +426,14 @@ a.choice-btn{
     pointer-events: none;
     z-index: 5;
 }
+
+#r3:checked ~ .scene-r3 {
+    display: flex;
+}
+#r3:checked ~ .scene-r3h {
+    display: flex;
+}
+#endsSteal:checked ~ .scene-end-steal {
+    display: flex;
+}
+

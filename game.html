@@ -52,6 +52,11 @@
     <input type="radio" name="history" id="r2" class="state-toggle">
     <input type="radio" name="history" id="r2h" class="state-toggle">
 
+    <input type="radio" name="history" id="r3" class="state-toggle">
+    <input type="radio" name="history" id="r3h" class="state-toggle">
+    <input type="radio" name="history" id="endSteal" class="state-toggle">
+
+
     <div class="scene scene-1">
 
         <img src="assets/home.jpg" alt="entrace-cave">
@@ -271,8 +276,9 @@
         <img src="assets/cave.jpg" alt="battle" class="scene-image">
 
         <div class="dialog">
-            <p class="text-spk"><strong>❤️❤️</strong>&nbsp; The dragon’s eyes snap open! It rears back, its chest glowing with an orange hue as it draws in a deep breath. The entire chamber is about to change.</p>
-        
+            <p class="text-spk"><strong>❤️❤️</strong>&nbsp; The dragon’s eyes snap open! It rears back, its chest
+                glowing with an orange hue as it draws in a deep breath. The entire chamber is about to change.</p>
+
             <div class="dialog-choices">
                 <label for="r2h" class="choice-btn">Roll to the side</label>
                 <label for="r2" class="choice-btn">Dive behind a stone pillar</label>
@@ -285,8 +291,9 @@
         <img src="assets/cave.jpg" alt="battle" class="scene-image">
 
         <div class="dialog">
-            <p class="text-spk"><strong>❤️❤️</strong> &nbsp; You dodged the flames! The dragon raises one enormous claw high above its head, ready to crush you flat</p>
-            
+            <p class="text-spk"><strong>❤️❤️</strong> &nbsp; You dodged the flames! The dragon raises one enormous claw
+                high above its head, ready to crush you flat</p>
+
             <div class="dialog-choices">
                 <label for="r3h" class="choice-btn">Raise the torch to block</label>
                 <label for="r3" class="choice-btn">Roll aside</label>
@@ -299,17 +306,65 @@
         <img src="assets/cave.jpg" alt="battle" class="scene-image">
 
         <div class="dialog">
-            <p class="text-spk"><strong>❤️🤍</strong>&nbsp; The flames scorch Jack's arm! Still, the dragon raises one enormous claw high above its head, ready to crush him flat.</p>
-            
+            <p class="text-spk"><strong>❤️🤍</strong>&nbsp; The flames scorch Jack's arm! Still, the dragon raises one
+                enormous claw high above its head, ready to crush him flat.</p>
+
             <div class="dialog-choices">
                 <label for="death" class="choice-btn">Hide behind the pillar</label>
                 <label for="death" class="choice-btn">Raise the torch to block</label>
                 <label for="r3h" class="choice-btn">Roll aside</label>
             </div>
-        
+
         </div>
     </div>
 
+
+    <div class="scene battle scene-r3">
+        <img src="assets/cave.jpg" alt="" class="scene-image">
+
+
+        <div class="dialog">
+            <p class="text-spk"><strong>❤️❤️</strong>&nbsp; The claw smashes the floor, missing you by an inch! The
+                dragon staggers, panting. Under its chin, one pale scale glows. This is your chance!</p>
+
+            <div class="dialog-choices">
+                <label for="death" class="choice-btn">Strike its armored belly</label>
+                <label for="endSteal" class="choice-btn">Plunge the torch into the glowing scale</label>
+                <label for="death" class="choice-btn">Throw the iron key at its eye</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="scene battle battle-hurt scene-r3h">
+        <div class=" dialog">
+            <p class="text-spk"><strong>❤️🤍</strong>&nbsp; Jack can barely stand, but the dragon staggers, panting.
+                Under its chin, one pale scale glows. One last chance! </p>
+        </div>
+        <div class="dialog-choices">
+            <div class="dialog-choices">
+                <label for="endSteal" class="choice-btn">Plunge the torch into the glowing scale</label>
+                <label for="death" class="choice-btn">Strike its armored belly</label>
+                <label for="death" class="choice-btn">Throw the iron key at its eye</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="scene scene-end-steal">
+        <img src="assets/home.jpg" alt="victory" class="scene-image">
+
+        <div class="dialog">
+            <p class="text-spk" style="display: block;">
+                With one last blow, the dragon falls. Jack lifts the torch,and light returns to the city. THE END.
+            </p>
+
+            <div class="dialog-choices">
+                <a href="index.html" class="choice-btn">Play Again</a>
+            </div>
+        </div>
+    </div>
+
+
 </body>
 <!--<a href="https://www.magnific.com/br/vetores-gratis/vector-o-fundo-dos-desenhos-animados-com-a-porta-magica-de-madeira-com-janela-portal-ystery_4393934.htm#fromView=keyword&page=1&position=22&uuid=c08f45ed-ded9-418c-aee4-ec67b9022ee8&track=ais_hybrid&query=Porta+arte+jogo+2d">Imagem de vectorpouch no Magnific</a>-->
+
 </html>
