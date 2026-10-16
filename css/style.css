@@ -430,7 +430,7 @@ a.choice-btn{
 #r3:checked ~ .scene-r3 {
     display: flex;
 }
-#r3:checked ~ .scene-r3h {
+#r3h:checked ~ .scene-r3h {
     display: flex;
 }
 #endSteal:checked ~ .scene-end-steal {
