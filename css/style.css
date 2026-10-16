@@ -433,7 +433,7 @@ a.choice-btn{
 #r3:checked ~ .scene-r3h {
     display: flex;
 }
-#endsSteal:checked ~ .scene-end-steal {
+#endSteal:checked ~ .scene-end-steal {
     display: flex;
 }
 
