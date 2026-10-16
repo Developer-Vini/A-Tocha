@@ -355,3 +355,11 @@ a.choice-btn{
 #doorUnlocked:checked ~ .scene-door{
     display: flex;
 }
+
+#dragonRoom:checked ~ .scene-dragon {
+    display: flex;
+}
+#endNegotiate:checked ~ .scene-end-negotiate {
+    display: flex;
+}
+

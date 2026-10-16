@@ -10,6 +10,8 @@
 
 <body>
 
+    <input type="radio" name="history" id="endNegotiate" class="state-toggle">
+
     <input type="radio" name="history" id="spk1" class="state-toggle" checked>
     <input type="radio" name="history" id="spk2" class="state-toggle">
     <input type="radio" name="history" id="spk3" class="state-toggle">
@@ -43,6 +45,9 @@
     <input type="radio" name="history" id="dragonRoom" class="state-toggle">
 
     <input type="radio" name="history" id="doorUnlocked" class="state-toggle">
+
+    <input type="radio" name="history" id="r1" class="state-toggle">
+
 
 
     <div class="scene scene-1">
@@ -227,6 +232,35 @@
             <div class="dialog-choices">
                 <label for="dragonRoom" class="choice-btn"> Open the door with the iron key</label>
                 <label for="scene2" class="choice-btn">return to the entrace</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="scene scene-dragon">
+        <img src="assets/dragon.jpg" alt="dragon chaamber" class="scene-image">
+
+        <div class="dialog">
+            <p class="text-spk" style="display: block;">
+                Inside the chamber, the dragon sleeps atop a mountain of gold. The magic torch glows between its claws.
+            </p>
+
+            <div class="dialog-choices">
+                <label for="r1" class="choice-btn">Try to steal the torch</label>
+                <label for="endNegotiate" class="choice-btn">Wake the dragon and negotiate</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="scene scene-end-negotiate">
+        <img src="assets/menino.webp" alt="secret ending" class="scene-image">
+
+        <div class="dialog">
+            <p class="text-spk" style="display: block;">
+                The dragon listens, and agrees to share the light with the city.
+                THE END! A simple conversation solves everything
+            </p>
+            <div class="dialog-choices">
+                <a href="index.html" class="choice-btn">Play again</a>
             </div>
         </div>
     </div>
